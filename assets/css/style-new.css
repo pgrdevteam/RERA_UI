@@ -2667,7 +2667,8 @@ font-size: 0;}
 .innerContent .chairmanPage .chairmanIntro .text {
 	flex-basis: 44%;
 	background: url("/assets/images/cm01.png") 50px top no-repeat, url("/assets/images/cm02.png") right 70px bottom no-repeat;
-	margin: 70px 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding: 24px 0;
 }
 .innerContent .chairmanPage .chairmanIntro .text p {
