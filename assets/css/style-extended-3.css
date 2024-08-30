@@ -1301,10 +1301,10 @@
      .productPage .sectionPlan .planImg {overflow: hidden; box-shadow: 0 0 8px 0px #00000078; -webkit-box-shadow: 0 0 8px 0px #00000078;}
      .sectionPlan .planImg .certifieBox{display: block; height: 100%; width: 100%;}
      .sectionPlan .planImg .certifieBox .dwnldBtn{width:100%; height: 100%; display: block; background: none !important;}
-     .productPage .sectionPlan .planImg .certificateImg{display: block !important;}
      .certificateMargin .col-md-4{padding: 0 5px !important;}
      .certificateImg{display: none;}
      .sectionPlan .planImg .certifieBox .dwnldBtn span, .sectionPlan .planImg .certifieBox .dwnldBtn img{display: none;}
+     .productPage .sectionPlan .planImg .certificateImg{display: block !important;}
      /* .productPage .sectionPlan .planImg:hover .dwnldBtn{display: inline-block;} */
      .sectionPlanPDF embed{width:100% !important; min-height: 450px;}
      .productPage .prodtabContent .tableInfo .tiBox{background: none !important; padding: 0 !important; box-shadow: none !important;}
