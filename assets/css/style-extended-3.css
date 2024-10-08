@@ -1081,7 +1081,7 @@
   table.table tr.workflow-green-changeland, .workflow-green-changeland{background-color: #98d8abe8 !important;}
   table.table tr.workflow-green-withdraw, .workflow-green-withdraw{background-color: #ddd !important;}
   table.table tr.workflow-red, .workflow-red, table.table tr.workflow-red1, .workflow-red1{background-color: #d9534f !important;}
-  
+  table.table tr.workflow-yellow-return, .workflow-yellow-return{background-color: #e7f844bf !important;}
   
   /* .office-note-box .stickyBox{box-shadow: 0 8px 6px -6px #bfbfbf !important; border-radius: 0 25px 0 0 !important; margin: 5px 0; width: 100%; background: #fff2ab !important; padding: 0 10px 10px 10px;}
   .stickyBox .noteHead{background: #fb9636; margin: 0 -10px; color: #fff; padding: 5px 10px; border-radius: 0 25px;}
