@@ -1946,7 +1946,7 @@ position: relative;
 .homeContent .homeMap .statRow .stateCol {
 	background: #0c274b;
 border-radius: 10px;
-min-height: 180px;
+min-height: 189px;
 text-align: center;
 padding: 15px;
 margin: 0 5px;
@@ -6892,8 +6892,8 @@ a.viewAll {
 }
 .hompagePopup .modal-dialog {
     max-width: 60%; max-width: 50%;
-top: 50%;
-transform: translateY(-50%) !important;}
+top: 0;
+transform: none !important;}
    .hompagePopup .modal-header {border: none; height:auto; background:transparent;}
    .hompagePopup .nav-tabs {
     border-bottom: none;
