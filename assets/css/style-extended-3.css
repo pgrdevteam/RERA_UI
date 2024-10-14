@@ -931,6 +931,7 @@
   
   }
   .modal.show{z-index: 1000!important}
+  .modal.show.centerModel{z-index: 1001 !important;}
   .modal .modal-title{text-transform: none;}
   
   table.theadFix thead, table.theadFix tbody tr{display:table;width:100%;table-layout:fixed;}
