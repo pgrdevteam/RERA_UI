@@ -931,7 +931,6 @@
   
   }
   .modal.show{z-index: 1000!important}
-  .modal.show.centerModel{z-index: 1001 !important;}
   .modal .modal-title{text-transform: none;}
   
   table.theadFix thead, table.theadFix tbody tr{display:table;width:100%;table-layout:fixed;}
@@ -1083,7 +1082,6 @@
   table.table tr.workflow-green-withdraw, .workflow-green-withdraw{background-color: #ddd !important;}
   table.table tr.workflow-red, .workflow-red, table.table tr.workflow-red1, .workflow-red1{background-color: #d9534f !important;}
   table.table tr.workflow-yellow-return, .workflow-yellow-return{background-color: #e7f844bf !important;}
-  
   
   /* .office-note-box .stickyBox{box-shadow: 0 8px 6px -6px #bfbfbf !important; border-radius: 0 25px 0 0 !important; margin: 5px 0; width: 100%; background: #fff2ab !important; padding: 0 10px 10px 10px;}
   .stickyBox .noteHead{background: #fb9636; margin: 0 -10px; color: #fff; padding: 5px 10px; border-radius: 0 25px;}
@@ -1303,10 +1301,10 @@
      .productPage .sectionPlan .planImg {overflow: hidden; box-shadow: 0 0 8px 0px #00000078; -webkit-box-shadow: 0 0 8px 0px #00000078;}
      .sectionPlan .planImg .certifieBox{display: block; height: 100%; width: 100%;}
      .sectionPlan .planImg .certifieBox .dwnldBtn{width:100%; height: 100%; display: block; background: none !important;}
+     .productPage .sectionPlan .planImg .certificateImg{display: block !important;}
      .certificateMargin .col-md-4{padding: 0 5px !important;}
      .certificateImg{display: none;}
      .sectionPlan .planImg .certifieBox .dwnldBtn span, .sectionPlan .planImg .certifieBox .dwnldBtn img{display: none;}
-     .productPage .sectionPlan .planImg .certificateImg{display: block !important;}
      /* .productPage .sectionPlan .planImg:hover .dwnldBtn{display: inline-block;} */
      .sectionPlanPDF embed{width:100% !important; min-height: 450px;}
      .productPage .prodtabContent .tableInfo .tiBox{background: none !important; padding: 0 !important; box-shadow: none !important;}
