@@ -3560,9 +3560,9 @@ background-position: -50px -426px;
 .complaintPopup .modal-header .close {
 	font-size: 2.4rem;
 }
-.modal.show {
+/* .modal.show {
 	background: rgba(0, 0, 0, 0.4);
-}
+} */
 #validateFoem .srch_wraper .input-group-append .btn-primary {
 	margin: 0;
 }
