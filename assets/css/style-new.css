@@ -1029,7 +1029,7 @@ padding: 14px 0 0 14px;
 	color: #ec7b0d;
 }
 .navbar .navbar-nav li.dropdown a:after {
-	content: "";
+	/* content: ""; */
 	height: 3px;
 	width: 0;
 	border: 0;
@@ -3673,7 +3673,7 @@ background-position: -50px -426px;
 	bottom: -22px;
 }
 .navbar .navbar-nav.innerNav li.dropdown {
-    padding: 14px 4px!important;
+    padding: 14px 3px!important;
 }
 }
 
@@ -7793,7 +7793,7 @@ app-public-navigation {
     border: none !important;
 }
 .navbar .navbar-nav li.nav-item {padding: 8px 4px!important} 
-.navbar .navbar-nav.innerNav li.nav-item {padding:14px 7px !important}
+.navbar .navbar-nav.innerNav li.nav-item {padding:14px 3.5px !important}
 .topSearch {width: 46% !important;
 margin-right: 12%;}
 }
