@@ -6,7 +6,7 @@ body {
 }
 a {
 	transition: all ease-in-out 0.5s;
-	font-size: 10px; 
+	font-size: 14px; 
 	color: #373435;
 }
 a:hover {
@@ -8456,9 +8456,9 @@ justify-content: center;
   .homeBanner .container {
 	position: absolute;
 	top: 190px; 
-	left:67px;
+	left:-7px;
 	width: 100%;
-	z-index: -100000000000000000000000000000000;
+	/* z-index: -100000000000000000000000000000000; */
   }
 
   @media (max-width: 768px) {
