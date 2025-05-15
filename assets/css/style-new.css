@@ -6,8 +6,16 @@ body {
 }
 a {
 	transition: all ease-in-out 0.5s;
-	font-size: 14px; 
+	font-size: 12px; 
 	color: #373435;
+}
+
+@media only screen and (min-width:1920){
+	a {
+		transition: all ease-in-out 0.5s;
+		font-size: 14px; 
+		color: #373435;
+	}
 }
 a:hover {
 	text-decoration: none;
@@ -1157,6 +1165,13 @@ line-height: 16px;
 .homeBanner .carousel.carousel-fade .carousel-item.active {
 	opacity: 1 !important;
 }
+
+
+@media only screen and (min-width:1920px){
+	.homeBanner .carousel.carousel-fade .carousel-item.active {
+		opacity: 1 !important;
+	}
+}
 .homeBanner .carousel.carousel-fade .carousel-item:first-child {
 	top: auto;
 	position: relative;
@@ -1432,6 +1447,19 @@ color: #fff;
 position: relative;
 width: 160px;
 }
+
+
+@media only screen and (min-width:1920px){
+	.homeContent .afterBanner .abCol .img .figcaption {
+		font-size: 12px;
+		text-transform: uppercase;
+		margin: 3px 6px 2px 9px;
+		text-align: left;
+		color: #fff;
+		position: relative;
+		width: 139px;
+	}
+}
 .homeContent .afterBanner .abCol .img .figcaption:after {
 	font-family: "Font Awesome 5 Free";
 /* font-weight: 600; */
@@ -1468,10 +1496,26 @@ color: #fc8c44;
 	background: #f6f2f2;
 }
 
+
+@media only screen and (min-width:1920px){
+	.homeContent .afterBanner .abCol .text ul li a {
+		text-transform: uppercase;
+		display: inline-block;
+		width: 100%;
+		margin-top: 7px;
+	}
+}
 @media only screen and (min-width: 768px) {
 .homeContent .afterBanner .abCol .text {
 	display: none;
 }
+}
+
+
+@media only screen and (min-width:1920px){
+	.homeContent .afterBanner .abCol .text ul li {
+		line-height: 3;
+	}
 }
 .homeContent .afterBanner .abCol .text ul li {
 	line-height: 2;
@@ -1515,6 +1559,12 @@ color: #fc8c44;
 	margin-right: auto;
     background-position-x:center; 
 
+}
+
+@media only screen and (min-width:1920px){
+	.homeContent .introWrap .gif-image{
+		margin-top: 399px;
+	}
 }
 
 /* .homeContent .introWrap .intro .text p */
@@ -1564,6 +1614,12 @@ color: #fc8c44;
 	color: #4aa272;
 	font-size: 2rem;
 	font-weight: bold;
+}
+
+@media only screen and (min-width:1920px){
+	.homeContent .introWrap .intro .text h3 {
+		margin-top: 22px;
+	}
 }
 .homeContent .introWrap .intro .text p {
 	width: 100%;
@@ -8459,6 +8515,15 @@ justify-content: center;
 	left:-7px;
 	width: 100%;
 	/* z-index: -100000000000000000000000000000000; */
+  }
+
+  @media only screen and (min-width:1920px) {
+	.homeBanner .container {
+		position: absolute;
+		top: 498px !important;
+		left: 274px !important;
+		width: 100% !important;
+	}
   }
 
   @media (max-width: 768px) {
