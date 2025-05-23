@@ -808,10 +808,11 @@ border-left: 1px solid #ccc;
 .topStrip .logoLeft {
 	width: 250px;
 /* position: inherit; */
-padding:5px 29px 0 6px;
+padding:8px 29px 0 6px;
 	 /* top:-54px; */
 	 top:-75px;
 	min-height: 90px;
+	margin-top: -32px;
 }
 }
 .topStrip .logoLeft img {
@@ -888,6 +889,7 @@ padding: 14px 0 0 14px;
 .navbar {
 	padding: 0;
 	background: transparent;
+	margin-top: -31px;
 }
 .navbar .navbar-brand {
 	color: #fff;
