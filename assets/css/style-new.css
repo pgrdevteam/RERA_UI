@@ -2048,7 +2048,8 @@ position: relative;
 	display: none;
 }
 .homeContent .homeMap .statRow {
-	padding: 15px;
+	/* padding: 15px; */
+	padding:0px;
 }
  
 .homeContent .homeMap .statRow.current {
