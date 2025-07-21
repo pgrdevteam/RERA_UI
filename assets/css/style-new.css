@@ -7814,11 +7814,14 @@ margin-left: 20%;
 }
 .innerNav {margin:auto;}
 /* .navbar-nav {position: relative; left:-277px;} */
-app-public-navigation .navbar-nav {
+/* app-public-navigation .navbar-nav {
 	position: relative; 
 	left:-277px;
-    margin: auto;}
-
+    margin: auto;} */
+	app-public-navigation{
+		position: relative;
+		left:-16rem;
+	}
 	
 .navbar .navbar-nav li.dropdown:hover {
     background: #0549b5;  
