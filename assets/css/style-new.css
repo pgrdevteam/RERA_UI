@@ -3677,7 +3677,7 @@ background-position: -50px -426px;
 	bottom: -22px;
 }
 .navbar .navbar-nav.innerNav li.dropdown {
-    padding: 14px 3px!important;
+    padding: 14px 10px!important;
 	margin-top: 2px ;
 }
 }
@@ -7831,7 +7831,7 @@ margin-left: 20%;
     border: none !important;
 }
 .navbar .navbar-nav li.nav-item {padding: 8px 4px!important} 
-.navbar .navbar-nav.innerNav li.nav-item {padding:14px 4px !important;margin-top: 2px;}
+.navbar .navbar-nav.innerNav li.nav-item {padding:14px 9px !important;margin-top: 2px;}
 .topSearch {width: 46% !important;
 margin-right: 12%;}
 }

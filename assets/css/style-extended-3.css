@@ -1524,6 +1524,21 @@
     .text-red-bold{color:#ff0000; font-weight: 600;}
     .englishLng .gujaratiLang, .gujaratiLang, .gujratiLng .engLng, .englishLng .gujaImgLang, .gujaImgLang, .gujratiLng .engImgLang{display: none;}
     .gujratiLng .gujaratiLang, .gujratiLng .gujaImgLang{display: block;}
+    
+
+.gujratiLng .member-details{
+  max-width: 43% !important;
+}
+
+.gujratiLng .reraAuth{
+  max-width: 76% !important;
+  padding: 0rem !important;
+}
+.gujratiLng .centerSpacing {
+  padding-left: 8rem !important;
+}
+
+
     .pdLr-48{padding: 0 1.25em;}
     .profChange .downMenu.active{display: block !important;}
       .profChange .dropdown-toggle{display: flex;justify-content: space-between;align-items: center; cursor: pointer;}
