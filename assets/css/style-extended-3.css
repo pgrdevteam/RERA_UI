@@ -1526,6 +1526,53 @@
     .text-red-bold{color:#ff0000; font-weight: 600;}
     .englishLng .gujaratiLang, .gujaratiLang, .gujratiLng .engLng, .englishLng .gujaImgLang, .gujaImgLang, .gujratiLng .engImgLang{display: none;}
     .gujratiLng .gujaratiLang, .gujratiLng .gujaImgLang{display: block;}
+    
+
+.gujratiLng .member-details{
+  max-width: 43% !important;
+}
+
+.gujratiLng .reraAuth{
+  max-width: 76% !important;
+  padding: 0rem !important;
+
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .gujratiLng .homeContent .homeMap .stateRowWrap {
+      margin-top: -283rem;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .gujratiLng .big_screen{
+    margin-left: -20%;
+  }
+}
+
+@media screen and (width: 768px) and (height: 1024px) and (orientation: portrait) {
+  .gujratiLng .gujAuth {
+    margin-left: -5%;
+    margin-right: 5%;
+  }
+  .gujaratiLng .mid_position{
+    margin-left: 7%;
+  }
+  .gujratiLng .reraAuth{
+    max-width:69rem !important;
+    margin-left: -7%;
+  }
+}
+
+.gujratiLng .authority-member{
+  border-radius: 10px !important;
+}
+.gujratiLng .centerSpacing {
+  padding-left: 8rem !important;
+}
+
+
     .pdLr-48{padding: 0 1.25em;}
     .profChange .downMenu.active{display: block !important;}
       .profChange .dropdown-toggle{display: flex;justify-content: space-between;align-items: center; cursor: pointer;}
