@@ -939,7 +939,7 @@ padding: 14px 0 0 14px;
     top: 92.9% !important;
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
     min-width: 320px !important;
-    border-radius: 12px !important;
+    border-radius: 0 !important;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
     color: #fff !important;
     z-index: 999 !important;
@@ -7840,7 +7840,7 @@ margin-left: 20%;
 
 	.navbar-nav .nav-item:hover{
 		background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
-		  border-radius: 12px !important;
+		  border-radius: 0px !important;
 		  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
 		  color: #fff !important;
 		  height: 46px !important;
@@ -7851,7 +7851,7 @@ margin-left: 20%;
 .navbar .navbar-nav li.dropdown:hover {
     /* background: #0549b5;   */
 	background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
-	border-radius: 12px !important;
+	border-radius: 0 !important;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
     color: #fff !important;
 }
@@ -8514,3 +8514,6 @@ justify-content: center;
 .productPage .prodtabContent .prodOverview .overviewBox .pBroucher h6 {font-weight:600; color:#979696; margin-bottom:15px;text-align: left;text-transform: capitalize;}
 
 
+.ql-container{
+height: auto;
+}
