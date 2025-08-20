@@ -8533,3 +8533,6 @@ justify-content: center;
 .productPage .prodtabContent .prodOverview .overviewBox .pBroucher h6 {font-weight:600; color:#979696; margin-bottom:15px;text-align: left;text-transform: capitalize;}
 
 
+.ql-container {
+height: auto;
+}
