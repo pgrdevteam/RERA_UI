@@ -495,7 +495,9 @@ min-height: 390px !important;
 }
 .topLine {
 	background: #e5e3e3;
+	height: 8rem;
 }
+
 .topLine .left ul {
 	display: flex;
 	padding: 8px 0;
@@ -666,7 +668,7 @@ height: 34px;
 width: 42px;
 display: block;
 }
-.topLine .right .langSec li.lang a.eng {
+.topLine .right .langSec li.langj a.eng {
 	font-size: 0;
 	background: url("/assets/images/sprite-home.png")no-repeat;
 background-position: -99px -587px;
@@ -674,7 +676,7 @@ height: 34px;
 width: 38px;
 display: block;
 }
-.topLine .right .langSec li.lang a.guj {
+.topLine .right .langSec li.langj a.guj {
 	font-size: 0;
 	background: url("/assets/images/sprite-home.png")no-repeat;
 background-position: -67px -587px;
@@ -700,7 +702,7 @@ width: 20px;
 position: absolute;
 left: 12px;
 }
-.topLine .right .langSec ul .lang select {
+.topLine .right .langSec ul .langj select {
 	background: url("/assets/images/menu-down.png") right 15px center no-repeat #a65609;
 	opacity: 0.8;
 	border: none;
@@ -710,13 +712,13 @@ left: 12px;
 }
 
 
-.topLine .right .langSec ul .lang select .option:hover {
+.topLine .right .langSec ul .langj select .option:hover {
 	background: #cf373d;
 }
-.topLine .right .langSec ul .lang select .option:focus {
+.topLine .right .langSec ul .langj select .option:focus {
 	background: #cf373d;
 }
-.topLine .right .langSec ul .lang select .option:checked {
+.topLine .right .langSec ul .langj select .option:checked {
 	background: #cf373d;
 }
 .topLine .right .icon {
@@ -797,12 +799,19 @@ border-left: 1px solid #ccc;
 
 @media only screen and (min-width: 768px) {
 .topStrip .logoLeft {
-	width: 250px;
+	/* width: 250px;
 position: inherit;
 padding: 15px 4px 0 6px;
 	 top:-89px;
 	min-height: 78px;
-	left:-24px
+	left:-24px */
+	width: 250px;
+        position: inherit;
+        padding: 3px 4px 0 6px;
+        top: -94px;
+        min-height: 85px;
+        left: -24px;
+    
 }
 }
 .topStrip .logoLeft img {
@@ -1159,12 +1168,47 @@ line-height: 16px;
 }
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
 .homeBanner {
-	margin-top: -120px;
+	margin-top: -136px;
 	margin-left: 112px;
 }
-}
+} */
+
+@media only screen and (min-width: 1200px) and (max-width: 1265px) {
+	.homeBanner {
+	  margin-top: -197px;
+	  margin-left: -1px;
+	}
+  }
+
+
+  @media only screen and (min-width: 1280px) and (max-width: 1830px) {
+	.homeBanner {
+	  margin-top: -156px;
+	  margin-left: -1px;
+	}
+  }
+
+  @media only screen and (min-width: 1830px) and (max-width: 1840px) {
+	.homeBanner {
+	  margin-top: -257px;
+	  margin-left: -1px;
+	}
+	.new_colp{
+		margin-top: -248px !important;
+	}
+  }
+  @media only screen and (min-width: 1860px) {
+	.homeBanner {
+	  margin-top: -229px; 
+	  margin-left: -85px;
+	}
+	.new_colp{
+		margin-top: -248px !important;
+	}
+  }
+  
 .homeBanner .carousel .carousel-inner .carousel-item:after {
 	/*background: url("/assets/images/banner-shadow.png") top left no-repeat;*/
 	background-size: auto;
@@ -1978,7 +2022,7 @@ position: relative;
 .homeContent .homeMap .mapRow .indiaMap .svghover:hover .st0{fill:#702e12; cursor: pointer;}
 .homeContent .homeMap .stateRowWrap {
 	z-index: 1;
-	margin-top:-100rem;
+	margin-top:-97rem;
 	margin-left: 4.5%;
 	position: absolute;
 	width: 100%;
@@ -6657,7 +6701,7 @@ body.blackTheme {background:#000;}
 .blackTheme .topLine .right .links ul li:after { background: #FFEB3B; }
 .blackTheme .topLine .right .langSec ul .login {
  background-color: #000000; color: #FFEB3B;}
-.blackTheme .topLine .right .langSec ul .lang select {
+.blackTheme .topLine .right .langSec ul .langj select {
  color: #FFEB3B; }
 .blackTheme .navbar .navbar-nav li.dropdown .nav-link { color: #FFEB3B; }
 .blackTheme .dashboardNav .nav.navbar-nav li a, .blackTheme .nav.navbar-nav li a { color: #FFEB3B; }
