@@ -1347,11 +1347,20 @@
   .topLine .right .acc a{height: auto !important;}
   .topLine .right .user .dropdown-menu{min-width:170px;}
   .homeBanner{min-height: 542px;}
-  @media only screen and (max-width: 991px){
+ 
+  /* @media only screen and (max-width: 991px){
   .homeBanner {
       min-height: 150px;
+      margin-top: -105px !important;
       }
+  } */
+  @media screen and (max-width: 667px) and (orientation: landscape) {
+    .homeBanner {
+      margin-top: 13px !important;
+    }
   }
+
+ 
   /*------------------------top serach css start---------------------*/
   .topSearch{width:100% !important;}
   .topSearch .form-control{height: auto;border-radius: 0; border:none;}

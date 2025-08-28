@@ -495,7 +495,7 @@ min-height: 390px !important;
 }
 .topLine {
 	background: #e5e3e3;
-	height: 8rem;
+	height: 8.5rem;
 }
 
 .topLine .left ul {
@@ -534,7 +534,7 @@ min-height: 390px !important;
 @media only screen and (min-width: 768px) {
 .topLine .right {
 	flex-direction: row;
-	padding-top: 11px;
+	padding-top: 9px;
 }
 }
 .topLine .right .links {
@@ -1164,7 +1164,7 @@ line-height: 16px;
 
 @media only screen and (min-width: 560px) {
 .homeBanner {
-	margin-top: 30px;
+	margin-top: -255 px;
 }
 }
 
@@ -1415,7 +1415,7 @@ top: 7px;
 }
 .homeContent .afterBanner {
 	width: 100%;
-	top: -150px;
+	top: -53%;
 	z-index: 999;
 }
 
