@@ -1348,7 +1348,7 @@
   .topLine .right .acc{align-items: center; line-height: inherit !important;}
   .topLine .right .acc a{height: auto !important;}
   .topLine .right .user .dropdown-menu{min-width:170px;}
-  .homeBanner{min-height: 350px;}
+  .homeBanner{min-height: 480px;}
   @media only screen and (max-width: 991px){
   .homeBanner {
       min-height: 150px;

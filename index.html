@@ -132,7 +132,7 @@ span.botplatformchatchat-user-2{color: #29ad64;display: block;width: 100%;}
   .botplatformbox-input-span{text-align: center;}
   /* 23/5 */
   
-  .uw-widget-custom-trigger {
+  /* .uw-widget-custom-trigger {
     left: 6px !important;
     bottom: 20px !important;
 }
@@ -140,10 +140,10 @@ span.botplatformchatchat-user-2{color: #29ad64;display: block;width: 100%;}
     .uwaw {
         max-width: 0% !important;
     }
-}
+} */
   
 </style>
-<link rel="stylesheet" href="styles.9a6e4f6ff634eed9c216.css"></head>
+<link rel="stylesheet" href="styles.0603475c7c76e6057374.css"></head>
 <body id="addClass" class="tempClass">
   <app-root></app-root>  
   <script type='text/javascript' src='https://www.botlibre.com/scripts/sdk.js'></script>
@@ -178,5 +178,40 @@ span.botplatformchatchat-user-2{color: #29ad64;display: block;width: 100%;}
   web.popupURL = "https://www.gujrera.gujarat.gov.in";
   web.createBox();
   </script>
-<script src="runtime-es2015.bde201bc7c13fa40544b.js" type="module"></script><script src="runtime-es5.bde201bc7c13fa40544b.js" nomodule defer></script><script src="polyfills-es5.2a532c922b0e20e4c019.js" nomodule defer></script><script src="polyfills-es2015.d522447943914575e5db.js" type="module"></script><script src="scripts.cef1c58ed6d4804ab258.js" defer></script><script src="main-es2015.ee1cabb63d0ea53e5317.js" type="module"></script><script src="main-es5.ee1cabb63d0ea53e5317.js" nomodule defer></script></body>
+<script>
+  window.addEventListener("load", function () {
+    function makeDraggable(selector) {
+      const widget = document.querySelector(selector);
+      if (!widget) return;
+
+      let isDragging = false;
+      let offsetX = 0, offsetY = 0;
+
+      widget.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        offsetX = e.clientX - widget.getBoundingClientRect().left;
+        offsetY = e.clientY - widget.getBoundingClientRect().top;
+        document.body.style.userSelect = "none"; // prevent text highlight
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        if (!isDragging) return;
+        widget.style.left = e.clientX - offsetX + "px";
+        widget.style.top = e.clientY - offsetY + "px";
+        widget.style.right = "auto"; // unlock from right
+        widget.style.bottom = "auto"; // unlock from bottom
+      });
+
+      document.addEventListener("mouseup", () => {
+        isDragging = false;
+        document.body.style.userSelect = "";
+      });
+    }
+
+    // Make both draggable
+    makeDraggable(".uwaw");
+    makeDraggable(".uw-widget-custom-trigger");
+  });
+</script>
+<script src="runtime-es2015.9808ea037336c0d845ba.js" type="module"></script><script src="runtime-es5.9808ea037336c0d845ba.js" nomodule defer></script><script src="polyfills-es5.2a532c922b0e20e4c019.js" nomodule defer></script><script src="polyfills-es2015.d522447943914575e5db.js" type="module"></script><script src="scripts.504d63d948080c6d53dc.js" defer></script><script src="main-es2015.7dbdd327b7b5d3bc6ae8.js" type="module"></script><script src="main-es5.7dbdd327b7b5d3bc6ae8.js" nomodule defer></script></body>
 </html>
