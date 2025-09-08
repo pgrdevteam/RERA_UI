@@ -666,7 +666,7 @@ height: 34px;
 width: 42px;
 display: block;
 }
-.topLine .right .langSec li.lang a.eng {
+.topLine .right .langSec li.langj a.eng {
 	font-size: 0;
 	background: url("/assets/images/sprite-home.png")no-repeat;
 background-position: -99px -587px;
@@ -674,7 +674,7 @@ height: 34px;
 width: 38px;
 display: block;
 }
-.topLine .right .langSec li.lang a.guj {
+.topLine .right .langSec li.langj a.guj {
 	font-size: 0;
 	background: url("/assets/images/sprite-home.png")no-repeat;
 background-position: -67px -587px;
@@ -700,7 +700,7 @@ width: 20px;
 position: absolute;
 left: 12px;
 }
-.topLine .right .langSec ul .lang select {
+.topLine .right .langSec ul .langj select {
 	background: url("/assets/images/menu-down.png") right 15px center no-repeat #a65609;
 	opacity: 0.8;
 	border: none;
@@ -710,13 +710,13 @@ left: 12px;
 }
 
 
-.topLine .right .langSec ul .lang select .option:hover {
+.topLine .right .langSec ul .langj select .option:hover {
 	background: #cf373d;
 }
-.topLine .right .langSec ul .lang select .option:focus {
+.topLine .right .langSec ul .langj select .option:focus {
 	background: #cf373d;
 }
-.topLine .right .langSec ul .lang select .option:checked {
+.topLine .right .langSec ul .langj select .option:checked {
 	background: #cf373d;
 }
 .topLine .right .icon {
@@ -6639,7 +6639,7 @@ body.blackTheme {background:#000;}
 .blackTheme .topLine .right .links ul li:after { background: #FFEB3B; }
 .blackTheme .topLine .right .langSec ul .login {
  background-color: #000000; color: #FFEB3B;}
-.blackTheme .topLine .right .langSec ul .lang select {
+.blackTheme .topLine .right .langSec ul .langj select {
  color: #FFEB3B; }
 .blackTheme .navbar .navbar-nav li.dropdown .nav-link { color: #FFEB3B; }
 .blackTheme .dashboardNav .nav.navbar-nav li a, .blackTheme .nav.navbar-nav li a { color: #FFEB3B; }
