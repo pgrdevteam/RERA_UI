@@ -1146,12 +1146,12 @@ line-height: 16px;
 	margin-top: -136px;
 	margin-left: 112px;
 }
-} */
+} 
 
 @media only screen and (min-width: 1200px) and (max-width: 1265px) {
 	.homeBanner {
-	  margin-top: -197px;
-	  margin-left: -1px;
+		margin-top: -117px;
+		margin-left: -1px; 
 	}
   }
 
