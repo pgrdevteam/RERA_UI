@@ -7854,7 +7854,7 @@ margin-left: 20%;
 	width:100%;
 	height: 46px;
 	background-size: cover;
-	z-index:2;
+	z-index:1;
 }
 .innerNav {margin:auto;}
 /* .navbar-nav {position: relative; left:-277px;} */
