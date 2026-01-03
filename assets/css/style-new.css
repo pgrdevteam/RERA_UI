@@ -1390,7 +1390,7 @@ top: 7px;
 
 @media only screen and (min-width: 768px) {
 .homeContent .afterBanner {
-	position: absolute; z-index:1;
+	position: absolute; z-index:0;
 }
 }
 
