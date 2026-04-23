@@ -125,7 +125,7 @@ SDK.fixChromeResizeCSS = false;
  * Set the error static field to trap or log any errors.
  */
 SDK.error = function(message) {
-	//console.log(message);
+	console.log(message);
 }
 
 /**
@@ -149,7 +149,7 @@ SDK.speechRate = null;
 SDK.speechRate = null;
 SDK.initResponsiveVoice = function() {
 	if (!('responsiveVoice' in window)) {
-		//console.log("ResponsiveVoice missing, you must load its script first");
+		console.log("ResponsiveVoice missing, you must load its script first");
 		return;
 	}
 	SDK.responsiveVoice = true;
@@ -174,7 +174,7 @@ SDK.initBingSpeech = function(instanceId, type) {
 	SDK.speechSynthesis = true;
 	SDK.speechInstance = instanceId;
 	SDK.speechType = type;
-	//console.log("Initializing Bing speech.");
+	console.log("Initializing Bing speech.");
 }
 
 /**
@@ -188,7 +188,7 @@ SDK.initQQSpeech = function(instanceId, type) {
 	SDK.speechSynthesis = true;
 	SDK.speechInstance = instanceId;
 	SDK.speechType = type;
-	//console.log("Initializing QQ speech.");	
+	console.log("Initializing QQ speech.");	
 }
 
 SDK.currentAudio = null;
@@ -362,7 +362,7 @@ SDK.tts = function(text, voice, native, lang, nativeVoice, mod, apiKey = null, a
 			request.onreadystatechange = function() {
 				if (request.readyState != 4) return;
 				if (request.status != 200) {
-					//console.log('Error: Speech web request failed');
+					console.log('Error: Speech web request failed');
 					return;
 				}
 				self.play(SDK.url + "/" + request.responseText);
@@ -372,7 +372,7 @@ SDK.tts = function(text, voice, native, lang, nativeVoice, mod, apiKey = null, a
 			request.send();
 		}
 	} catch (error) {
-		//console.log('Error: Speech web request failed');
+		console.log('Error: Speech web request failed');
 	}
 }
 
@@ -402,7 +402,7 @@ SDK.responsiveVoiceTTS = function(utterance, lang, voice) {
 		}
 		responsiveVoice.speak(utterance.text, voice, events);
 	} catch (error) {
-		//console.log(error);
+		console.log(error);
 	}
 }
 
@@ -453,7 +453,7 @@ SDK.bingSpeechTTS = function(utterance, lang, voice, apiKey = null, apiEndpoint 
 				if('bingApiKeyTr' in window) {
 					SDK.showError("Invalid API Key or API Endpoint");
 				}
-				//console.log('Error: Bing Speech web request failed: ' + request.statusText);
+				console.log('Error: Bing Speech web request failed: ' + request.statusText);
 			}
 			
 			var audio = self.play(SDK.url + "/" + request.responseText);
@@ -465,7 +465,7 @@ SDK.bingSpeechTTS = function(utterance, lang, voice, apiKey = null, apiEndpoint 
 		request.send();
 		
 	} catch (error) {
-		//console.log(error);
+		console.log(error);
 	}
 }
 
@@ -500,7 +500,7 @@ SDK.qqSpeechTTS = function(utterance, lang, voice) {
 		request.onreadystatechange = function() {
 			if (request.readyState != 4) return;
 			if (request.status != 200) {
-				//console.log('Error: QQ Speech web request failed.');
+				console.log('Error: QQ Speech web request failed.');
 				return;
 			}
 			var audio = self.play(SDK.url + "/" + request.responseText);
@@ -512,7 +512,7 @@ SDK.qqSpeechTTS = function(utterance, lang, voice) {
 		request.send();
 		
 	} catch (error) {
-		//console.log(error);
+		console.log(error);
 	}
 }
 
@@ -3890,7 +3890,7 @@ SDK.updateAvatar = function(responseMessage, speak, urlprefix, elementPrefix, ch
 							} else {
 								//var audio = new Audio(urlprefix + responseMessage.speech, channelaudio);
 								var audio = SDK.play(urlprefix + responseMessage.speech, channelaudio);
-								//audio.onabort = function() {//console.log("abort");}
+								//audio.onabort = function() {console.log("abort");}
 								audio.oncanplay = function() {
 									if (playing || playFailed) {
 										return false;
@@ -3912,12 +3912,12 @@ SDK.updateAvatar = function(responseMessage, speak, urlprefix, elementPrefix, ch
 								audio.onerror = function() {
 									end();
 								}
-								//audio.onloadeddata = function() {//console.log("loadeddata");}
-								//audio.onloadedmetadata = function() {//console.log("loadedmetadata");}
-								//audio.onpause = function() {//console.log("pause");}
-								//audio.onplay = function() {//console.log("play");}
-								//audio.onplaying = function() {//console.log("playing");}
-								//audio.ontimeupdate = function() {//console.log("timeupdate");}
+								//audio.onloadeddata = function() {console.log("loadeddata");}
+								//audio.onloadedmetadata = function() {console.log("loadedmetadata");}
+								//audio.onpause = function() {console.log("pause");}
+								//audio.onplay = function() {console.log("play");}
+								//audio.onplaying = function() {console.log("playing");}
+								//audio.ontimeupdate = function() {console.log("timeupdate");}
 								var onended = audio.onended;
 								audio.onended = function() {
 									if (onended != null) {
@@ -5416,7 +5416,7 @@ function WebChatbotListener() {
 		if (this.game != null) {
 			this.game.updateAvatar(responseMessage);
 		}
-		//console.log(responseMessage);
+		console.log(responseMessage);
 	};
 	
 	this.initGame = function(game) {
@@ -7820,7 +7820,7 @@ function SDKConnection() {
 	 */
 	this.deleteQuestionResponse = function(config, processor) {
 		config.addCredentials(this);
-		//console.log("sdk delete next question response function call");
+		console.log("sdk delete next question response function call");
 		this.POST(this.credentials.rest + "/delete-response", config.toXML(), function(xml) {
 			if (processor != null) {
 				processor();
@@ -7914,7 +7914,7 @@ function SDKConnection() {
 
 	this.GET = function(url, processor) {	
 		if (this.debug) {
-			//console.log("GET: " + url);
+			console.log("GET: " + url);
 		}
 		var xml = null;
 		var request = new XMLHttpRequest();
@@ -7923,11 +7923,11 @@ function SDKConnection() {
 		request.onreadystatechange = function() {
 			if (request.readyState != 4) return;
 			if (request.status != 200) {
-				//console.log('Error: SDK GET web request failed');
+				console.log('Error: SDK GET web request failed');
 				if (debug) {
-					//console.log(request.statusText);
-					//console.log(request.responseText);
-					//console.log(request.responseXML);
+					console.log(request.statusText);
+					console.log(request.responseText);
+					console.log(request.responseXML);
 				}
 				if (request.statusText != null && request.responseText != null && request.responseText.indexOf("<html>") != -1) {
 					self.error(request.statusText);
@@ -7949,27 +7949,27 @@ function SDKConnection() {
 
 	this.POST = function(url, xml, processor) {
 		if (this.debug) {
-			//console.log("POST: " + url);
-			//console.log("XML: " + xml);
+			console.log("POST: " + url);
+			console.log("XML: " + xml);
 		}
 		var request = new XMLHttpRequest();
 		var debug = this.debug;
 		var self = this;
 		request.onreadystatechange = function() {
 			if (debug) {
-				//console.log(request.readyState);
-				//console.log(request.status);
-				//console.log(request.statusText);
-				//console.log(request.responseText);
-				//console.log(request.responseXML);
+				console.log(request.readyState);
+				console.log(request.status);
+				console.log(request.statusText);
+				console.log(request.responseText);
+				console.log(request.responseXML);
 			}
 			if (request.readyState != 4) return;
 			if (request.status != 200 && request.status != 204) {
-				//console.log('Error: SDK POST web request failed');
+				console.log('Error: SDK POST web request failed');
 				if (debug) {
-					//console.log(request.statusText);
-					//console.log(request.responseText);
-					//console.log(request.responseXML);
+					console.log(request.statusText);
+					console.log(request.responseText);
+					console.log(request.responseXML);
 				}
 				if (request.statusText != null && request.responseText != null && request.responseText.indexOf("<html>") != -1) {
 					self.error(request.statusText);
@@ -7992,9 +7992,9 @@ function SDKConnection() {
 	
 	this.POST_FILE = function(url, form, xml, processor) {
 		if (this.debug) {
-			//console.log("POST FILE: " + url);
-			//console.log("FORM: " + form);
-			//console.log("XML: " + xml);
+			console.log("POST FILE: " + url);
+			console.log("FORM: " + form);
+			console.log("XML: " + xml);
 		}
 		var request = new XMLHttpRequest();
 		var formData = new FormData(form);
@@ -8003,19 +8003,19 @@ function SDKConnection() {
 		var self = this;
 		request.onreadystatechange = function() {
 			if (debug) {
-				//console.log(request.readyState);
-				//console.log(request.status);
-				//console.log(request.statusText);
-				//console.log(request.responseText);
-				//console.log(request.responseXML);
+				console.log(request.readyState);
+				console.log(request.status);
+				console.log(request.statusText);
+				console.log(request.responseText);
+				console.log(request.responseXML);
 			}
 			if (request.readyState != 4) return;
 			if (request.status != 200 && request.status != 204) {
-				//console.log('Error: SDK POST web request failed');
+				console.log('Error: SDK POST web request failed');
 				if (debug) {
-					//console.log(request.statusText);
-					//console.log(request.responseText);
-					//console.log(request.responseXML);
+					console.log(request.statusText);
+					console.log(request.responseText);
+					console.log(request.responseXML);
 				}
 				if (request.statusText != null && request.responseText != null && request.responseText.indexOf("<html>") != -1) {
 					self.error(request.statusText);
@@ -8041,9 +8041,9 @@ function SDKConnection() {
 		var debug = this.debug;
 		var reader = new FileReader();
 		if (this.debug) {
-			//console.log("POST FILE: " + url);
-			//console.log("FORM: " + form);
-			//console.log("XML: " + xml);
+			console.log("POST FILE: " + url);
+			console.log("FORM: " + form);
+			console.log("XML: " + xml);
 		}
 		reader.onloadend = function() {
 			var tempImg = new Image();
@@ -8080,19 +8080,19 @@ function SDKConnection() {
 				formData.append('file', blob, file.name);
 				request.onreadystatechange = function() {
 					if (debug) {
-						//console.log(request.readyState);
-						//console.log(request.status);
-						//console.log(request.statusText);
-						//console.log(request.responseText);
-						//console.log(request.responseXML);
+						console.log(request.readyState);
+						console.log(request.status);
+						console.log(request.statusText);
+						console.log(request.responseText);
+						console.log(request.responseXML);
 					}
 					if (request.readyState != 4) return;
 					if (request.status != 200 && request.status != 204) {
-						//console.log('Error: SDK POST web request failed');
+						console.log('Error: SDK POST web request failed');
 						if (debug) {
-							//console.log(request.statusText);
-							//console.log(request.responseText);
-							//console.log(request.responseXML);
+							console.log(request.statusText);
+							console.log(request.responseText);
+							console.log(request.responseXML);
 						}
 						if (request.statusText != null && request.responseText != null && request.responseText.indexOf("<html>") != -1) {
 							self.error(request.statusText);
@@ -8155,19 +8155,19 @@ function SDKConnection() {
 				formData.append('file', blob, file.name);
 				request.onreadystatechange = function() {
 					if (debug) {
-						//console.log(request.readyState);
-						//console.log(request.status);
-						//console.log(request.statusText);
-						//console.log(request.responseText);
-						//console.log(request.responseXML);
+						console.log(request.readyState);
+						console.log(request.status);
+						console.log(request.statusText);
+						console.log(request.responseText);
+						console.log(request.responseXML);
 					}
 					if (request.readyState != 4) return;
 					if (request.status != 200 && request.status != 204) {
-						//console.log('Error: SDK POST web request failed');
+						console.log('Error: SDK POST web request failed');
 						if (debug) {
-							//console.log(request.statusText);
-							//console.log(request.responseText);
-							//console.log(request.responseXML);
+							console.log(request.statusText);
+							console.log(request.responseText);
+							console.log(request.responseXML);
 						}
 						if (request.statusText != null && request.responseText != null && request.responseText.indexOf("<html>") != -1) {
 							self.error(request.statusText);
@@ -8415,7 +8415,7 @@ function UserMessageConfig() {
 	this.parseXML = function(element) {
 		var userMessageNode = element.getElementsByTagName("user-message")[0];
 		if (userMessageNode != null) {
-			//console.log(userMessageNode);
+			console.log(userMessageNode);
 			this.id = userMessageNode.getAttribute("id");
 			this.creationDate = userMessageNode.getAttribute("creationDate");
 			this.owner = userMessageNode.getAttribute("owner");
@@ -9230,7 +9230,7 @@ function AnalyticObjectDetectionResponse() {
 	this.parseXML = function(element) {
 		
 		//this.name = element.getAttribute("name");
-		//console.log(element);
+		console.log(element);
 		var node = element.getElementsByTagName("image")[0];
 		if (node != null) {
 			this.image = SDK.innerHTML(node);
@@ -9249,7 +9249,7 @@ function AnalyticObjectDetectionResponse() {
 				this.left = box.getAttribute("left");
 				this.top = box.getAttribute("top");
 				this.right = box.getAttribute("right");
-				////console.log(box.getAttribute("bottom") + ", " + box.getAttribute("left")+ ", " + box.getAttribute("top")+ ", " + box.getAttribute("right"));
+				//console.log(box.getAttribute("bottom") + ", " + box.getAttribute("left")+ ", " + box.getAttribute("top")+ ", " + box.getAttribute("right"));
 			}
 		}
 		
