@@ -2393,7 +2393,7 @@ font-size: 0;
 }
 .footer .foo2 .ftSocial {
 	display: flex;
-	justify-content: right;
+	/* justify-content: right; */
 	margin-top: 30px;
 }
 
