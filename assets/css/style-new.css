@@ -37,6 +37,17 @@ img {
 	-o-user-select: none;
 	user-select: none;
 }
+
+.ql-editor img{
+      width: 115px !important;
+}
+.ql-editor p:has(img) {
+  text-align: center;
+}
+.ql-editor p:has(img) img {
+  display: block;
+  width: 115px;
+}
 .white {
 	color: #fff !important;
 }
