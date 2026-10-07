@@ -1138,7 +1138,7 @@
   .eTapalCard .card-header{font-size: inherit !important; }
   .eTapalCard + .accordion{margin-top:0 !important;}
   .accordion .card.eTapalCard .card-header{padding: .75rem 1.25rem !important;}
-  .productPage nav > .nav.nav-tabs{width:80% !important;}
+  .productPage nav > .nav.nav-tabs{width:97% !important;}
   .productPage .prodtabContent .promoDetails .promoBox .pDetails.parentEntity .info p strong{width:60% !important;}
   .productPage .prodtabContent .promoDetails .promoBox .pDetails.parentEntity .info p span{width:40% !important; text-align: right;}
   
