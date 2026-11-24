@@ -5377,12 +5377,25 @@ top: 50%;
 transform: translate(-50%,-50%);
 font-size: 5rem;
 font-weight: 300;}
-.productPage .productTabs {background:#363636;}
+/* .productPage .productTabs {background:#e1e1b3ad;} */
+/* .productPage .productTabs {background:#C8C8B0;} */
+/* .productPage .productTabs {background:#D1D1C0;} */
+/* .productPage .productTabs {background:#BFC0B0;} */
+/* .productPage .productTabs {background:#D6D6C8;} */
+/* .productPage .productTabs {background:#F5E6C8;} */
+.productPage .productTabs {background:#737373;}
 .productPage nav > .nav.nav-tabs{
 width:50%;
   border: none;
     color:#fa8303;
-    background:#363636;
+    /* background:#363636; */
+	/* background: #e1e1b3ad; */
+	/* background: #C8C8B0; */
+	/* background: #D1D1C0; */
+	/* background: #BFC0B0; */
+	/* background: #D6D6C8; */
+	/* background: #F5E6C8; */
+	background: #737373;
     border-radius:0;
 margin:auto;
 padding: 6px 25px;
@@ -5397,7 +5410,13 @@ padding: 6px 25px;
   border: none;
     
     color:#fa8303;
-    background:#363636;
+    /* background:#e1e1b3ad;
+	 background:#C8C8B0; */
+	  /* background:#D1D1C0; */
+	   /* background:#BFC0B0; */
+	    /* background:#D6D6C8; */
+		/* background:#F5E6C8; */
+		background: #737373;
     border-radius:0;
 	font-size:2.4rem;
 	
@@ -7429,7 +7448,7 @@ background-size: 100% 10px;}
 	top:14px;
 }	
 .productPage .prodtabContent .prodOverview .aboutProperty h3 {margin-top:15px;}	
-.productPage .sectionPlan .planImg {width: 100%;}	
+.productPage .sectionPlan .planImg {width: 55%;}	
 .productPage nav > div a.nav-item.nav-link {flex-basis: 100%;
 margin-bottom: 23px;
 border: none !important;}	
@@ -7498,7 +7517,7 @@ max-width: 50%;}
 
 
     .productPage .prodtabContent .prodOverview .overviewBox .pBroucher .carousel .carousel-control-prev::before {content:none;}
-    .productPage .prodtabContent .projectDoc {padding-bottom: 0; background-size: cover;}
+    .productPage .prodtabContent .projectDoc {padding:35px 0; background-size: contain;}
     .topLine .right .langSec ul .login {padding: 10px 24px 11px 40px;}
 
 
